@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+        <!--<bean id="vehicle" class="com.bhaskar.xmlbased.Bike">
+            </bean>-->
+
+    <bean id="tyre" class="com.bhaskar.annotationBased.Tyre">
+        <!--<property name="brand" value="ceat"></property>       using setter - setting property value -->
+        <constructor-arg value="MRF"></constructor-arg> <!-- using constructor - setting property value -->
+    </bean>
+
+    <context:component-scan base-package="com.bhaskar.annotationBased"></context:component-scan>
+
+</beans>
